@@ -212,7 +212,7 @@ const App = () => {
       title: 'Retiro Refugio De Cristal',
       date: '25-27 Septiembre, 2026',
       location: 'Casa Rural El Refugio De Cristal, Toledo',
-      description: 'Una escapada para reconectar con la naturaleza y contigo. Tres días de yoga, meditación, senderismo y comida saludable en un entorno idílico.',
+      description: 'Una escapada para reconectar con la naturaleza y contigo. Tres días de senderismo, talleres, y un entorno idílico para disfrutar.',
       images: [
         retiroSeptiembre1,
         retiroSeptiembre2,
@@ -221,12 +221,13 @@ const App = () => {
       ],
       features: [
         'Alojamiento en casa rural con encanto',
-        'Clases de Hatha y Vinyasa Yoga diarias',
-        'Taller de cocina vegetariana',
+        'Clases de yoga para todos los niveles',
+        'Visita a quesería tradicional',
         'Rutas de senderismo guiadas',
-        'Círculos de mujeres y meditación'
+        'Círculos de mujeres y meditación',
+        'Constelación astronómica'
       ],
-      price: 'Desde 350€'
+      price: 'Desde 320€'
     }
   ];
 
@@ -303,7 +304,7 @@ const App = () => {
         
         <div className="relative z-10 text-center px-6 max-w-5xl">
           <FadeInSection delay={0}>
-            <span className="text-[#707A5E] uppercase tracking-[0.5em] text-[10px] mb-6 block">Estudio Boutique · Madrid</span>
+            <span className="text-[#707A5E] uppercase tracking-[0.5em] text-[10px] mb-6 block">Estudio Boutique · Alcalá de Henares</span>
           </FadeInSection>
           
           <FadeInSection delay={200}>
@@ -479,7 +480,7 @@ const App = () => {
           </FadeInSection>
           <FadeInSection delay={300}>
             <div className="aspect-4/5 rounded-t-full border border-[#707A5E]/40 hover:scale-105 transition-transform duration-1000 overflow-hidden">
-              <img src={imagenRetiro} alt="Retiro de yoga en un entorno natural" className="w-full h-full object-cover" />
+              <img src={imagenRetiro} alt="Mujer practicando una postura de yoga durante un retiro en la naturaleza" className="w-full h-full object-cover" />
             </div>
           </FadeInSection>
         </div>
@@ -501,16 +502,16 @@ const App = () => {
                 {/* Columna de Imágenes */}
                 <div className="grid grid-cols-2 gap-4">
                   <div className="rounded-3xl overflow-hidden shadow-md aspect-square">
-                    <img src={retiro.images[0]} alt={`Imagen 1 de ${retiro.title}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                    <img src={retiro.images[0]} alt={`Imagen 1 del ${retiro.title} en Toledo`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                   </div>
                   <div className="rounded-3xl overflow-hidden shadow-md aspect-square">
-                    <img src={retiro.images[1]} alt={`Imagen 2 de ${retiro.title}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                    <img src={retiro.images[1]} alt={`Imagen 2 del ${retiro.title} en Toledo`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                   </div>
                   <div className="rounded-3xl overflow-hidden shadow-md aspect-square">
-                    <img src={retiro.images[2]} alt={`Imagen 3 de ${retiro.title}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                    <img src={retiro.images[2]} alt={`Imagen 3 del ${retiro.title} en Toledo`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                   </div>
                   <div className="rounded-3xl overflow-hidden shadow-md aspect-square">
-                    <img src={retiro.images[3]} alt={`Imagen 4 de ${retiro.title}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                    <img src={retiro.images[3]} alt={`Imagen 4 del ${retiro.title} en Toledo`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                   </div>
                 </div>
                 {/* Columna de Texto */}
@@ -602,7 +603,7 @@ const App = () => {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-20 items-center">
           <FadeInSection className="w-full md:w-1/2 flex flex-col items-center">
             <div className="w-64 h-64 md:w-100 md:h-100 bg-[#3C412C] rounded-full overflow-hidden border-8 border-[#FAF9F6]/10 mb-8 flex items-center justify-center italic text-xs text-[#FAF9F6]/40 hover:rotate-3 transition-transform duration-700">
-              <img src={imagenEquipo} alt="Retiro de yoga en un entorno natural" className="w-full h-full object-cover" />
+              <img src={imagenEquipo} alt="Las fundadoras de The Loto Yoga Experience, madre e hija" className="w-full h-full object-cover" />
             </div>
           </FadeInSection>
           <div className="w-full md:w-1/2">
@@ -672,7 +673,7 @@ const App = () => {
                   <div className="absolute inset-0 bg-[#3C412C]/20 opacity-0 group-hover:opacity-100 transition-opacity z-10 flex items-center justify-center text-white">
                     <InstagramIcon size={24} className="scale-50 group-hover:scale-100 transition-transform duration-300" />
                   </div>
-                  <img src={img} alt={`Publicación de Instagram ${i + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img src={img} alt={`Publicación de Instagram de The Loto Yoga Experience ${i + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 </div>
               </FadeInSection>
             ))}
